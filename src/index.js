@@ -34,17 +34,17 @@ function noCountry() {
   error({
     text: 'Нет такой страны!',
   });
-  console.log('Нет такой страны');
+  // console.log('Нет такой страны');
   refs.countryBox.innerHTML = '';
 }
 
 function renderOneCountry(data) {
-  console.log(data[0].name);
+  // console.log(data[0].name);
   refs.countryBox.innerHTML = oneCountryMarkup(data);
 }
 
 function renderCountries(data) {
-  console.log(data);
+  // console.log(data);
   refs.countryBox.innerHTML = countriesMurkup(data);
 }
 
@@ -52,6 +52,6 @@ function toManyCountries() {
   error({
     text: 'Слишком много стран!',
   });
-  console.log('Слишком много стран');
+  // console.log('Слишком много стран');
   refs.countryBox.innerHTML = '';
 }
